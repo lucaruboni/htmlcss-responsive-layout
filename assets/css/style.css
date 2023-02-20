@@ -6,6 +6,11 @@
 
 /* #region utilities */
 
+body{
+    font-family: 'PT Sans', sans-serif;
+
+}
+
 .flexbox{
     display: flex;
 }
@@ -47,6 +52,7 @@
     padding: 1rem;
     margin: 1rem;
     display: inline-block;
+    color: var(--light-white);
 }
 
 .d_none_lg{
@@ -111,6 +117,13 @@
     background-color: var(--light-blue);
 }
 
+.btn{
+    background-color: var(--light-white);
+    color: var(--dark-black);
+    font-weight: 700;
+    border-radius: 35px;
+
+}
 /* #endregion feature */
 
 /* #region custom */
