@@ -21,6 +21,7 @@ body{
     --light-blue: #b5ddff;
     --light-purple:#9792e4;
     --dark-black: #000;
+    --light-grey: #5c7182;
 }
 
 .container{
@@ -37,10 +38,26 @@ body{
     gap: 1rem;
 }
 
-[class="col_12"]{
+img{
+    width: 80%;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    display: inline-block;
+    padding: 0 0.5rem;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+
+[class="col"]{
     padding: 0 1rem;
-    width: 200px;
-    height: 200px;
 }
 
 .col_12{
@@ -59,27 +76,32 @@ body{
     display: none;
 }
 
-/* #endregion utilities */
 
-/* #region debug */
 .col_12{
-    border: 1px dotted;
-    height: 200px;
+    width: 100%;
+
 }
 
 .col_md_6{
-    height: 200px;
 }
 
 .col_md_4{
-    height: 200px;
 }
 
 .col_lg_6{
-    width: 300px;
-    height: 400px;
 }
-/* #endregion debug */
+
+.card{
+    width: 100%;
+    padding: 1rem;
+}
+
+.p_marg{
+    margin: 2rem 1rem;
+}
+
+
+/* #endregion utilities */
 
 /* #region header */
 
@@ -104,6 +126,14 @@ body{
 
 }
 
+
+.btn{
+    background-color: var(--light-white);
+    color: var(--dark-black);
+    font-weight: 700;
+    border-radius: 35px;
+
+}
 /* #endregion header */
 
 /* #region main */
@@ -117,13 +147,47 @@ body{
     background-color: var(--light-blue);
 }
 
-.btn{
-    background-color: var(--light-white);
-    color: var(--dark-black);
-    font-weight: 700;
-    border-radius: 35px;
-
+.card_radius{
+    border-radius: 25px;
 }
+
+.card.flexbox, .text_container.flexbox{
+    flex-direction: column;
+}
+
+.text_container.flexbox{
+    align-items: center;
+}
+
+.blue_head{
+    color: var(--head-blue);
+    font-size: 1.5rem;
+}
+
+.btn.blue{
+    color: var(--light-white);
+    background-color: var(--head-blue);
+    padding: 0.6rem;
+    margin: 1rem;
+    text-align: center;
+    display: inline-block;
+}
+
+.feature_p{
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--light-grey);
+}
+
+#phone{
+    margin-bottom: -1rem;
+}
+
+.feature_icon{
+    color: var(--head-blue);
+    margin: 1rem;
+}
+
 /* #endregion feature */
 
 /* #region custom */
@@ -197,7 +261,8 @@ body{
     .row_lg{
         flex-wrap: nowrap;
     }
-}
+
+
 
 @media screen and (min-width: 1160px){
 
@@ -224,10 +289,23 @@ body{
     
     }
 
-
+    .card.flexbox{
+        flex-direction: row;   
+    }
     
-}
+    .text_container_lg{
+        margin-top: 1rem;
+    }
+   
+    #lrg_txt{
+            width: 70%;
+    }
 
+    #phone{
+        width: 40%;
+        margin-bottom: -4rem;
+    }
+}
 
 
 
