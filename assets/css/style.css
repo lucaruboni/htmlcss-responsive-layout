@@ -140,7 +140,14 @@
 
 /* #endregion benefits */
 
+/* #region call_to_action */
 
+.call_bg{
+    background-color: var(--light-purple);
+}
+
+
+/* #endregion call_to_action */
 
 /* #endregion main */
 
