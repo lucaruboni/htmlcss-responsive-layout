@@ -315,11 +315,16 @@ span{
     background-color: var(--light-purple);
 }
 
-.bg_benefits{
+.card_bg_benefits{
     background-color: var(--light-white);
     border-radius: 25px;
 }
 
+.btn.btn_purple{
+    background-color: var(--light-purple);
+    color: var(--light-white);
+    padding: 1rem 1.2rem;
+}
 /* #endregion benefits */
 
 /* #region call_to_action */
