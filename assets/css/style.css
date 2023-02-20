@@ -13,11 +13,14 @@
 :root{
     --head-blue: #0084fd;
     --light-white: #ffffff;
+    --light-blue: #b5ddff;
+    --light-purple:#9792e4;
 }
 
 .container{
     width: 80%;
     max-width: 1152px;
+    margin: auto;
 }
 
 .row{
@@ -25,6 +28,7 @@
     flex-wrap: wrap;
     margin: 0 -1rem;
     justify-content: center;
+    gap: 1rem;
 }
 
 [class="col_12"]{
@@ -63,6 +67,11 @@
 .col_md_4{
     height: 200px;
 }
+
+.col_lg_6{
+    width: 300px;
+    height: 400px;
+}
 /* #endregion debug */
 
 /* #region header */
@@ -95,6 +104,29 @@
 .app_main{
     justify-content: center;
 }
+/* #region feature */
+
+.col_feature_bg{
+    background-color: var(--light-blue);
+}
+
+/* #endregion feature */
+
+/* #region custom */
+
+.custom_bg{
+    background-color: var(--light-purple);
+}
+
+
+/* #endregion custom */
+
+/* #region partner */
+    .col_partner_bg{
+        background-color: var(--light-blue);
+    }
+
+/* #endregion partner */
 
 
 
@@ -112,7 +144,8 @@
 
 @media screen and (min-width: 768px){
     .col_md_6{
-        width: calc(100% / 12 * 6);    
+        width: calc(100% / 12 * 6);  
+        margin-right: 1.2rem;  
     }
 
     .col_md_3{
@@ -132,6 +165,10 @@
         display: inline-block;
     }
 
+    .row_lg{
+        gap: 6rem;
+    }
+
     .col_md_6{
         width: calc(100% / 12 * 6);    
     }
@@ -140,6 +177,8 @@
         width: calc(100% / 12 *3);
     
     }
+
+
     
 }
 
