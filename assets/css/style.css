@@ -196,6 +196,26 @@ p{
     background-color: var(--light-purple);
 }
 
+.col_custom_bg{
+    background-color: var(--light-white);
+    border-radius: 25px;
+}
+
+.text_container.white{
+    color: var(--light-white);
+}
+
+#arrow{
+    margin-top: 2rem;
+    width: 3rem;
+    aspect-ratio: 1/1;
+    text-align: center;
+    line-height: 3rem;
+    background-color: var(--light-purple);
+    border-radius: 50%;
+}
+
+
 
 /* #endregion custom */
 
@@ -258,13 +278,10 @@ p{
     
     }
     
-    .row_lg{
-        flex-wrap: nowrap;
-    }
+ 
 
 
-
-@media screen and (min-width: 1160px){
+@media screen and (min-width: 1154px){
 
     .d_none{
         display: none;
@@ -293,6 +310,19 @@ p{
         flex-direction: row;   
     }
     
+    .row_lg{
+        flex-wrap: nowrap;
+    }
+
+    #custom_card, #custom_card_down{
+        flex-direction: column;
+    }
+
+
+    #custom_card> img{
+        margin-bottom: 8rem;
+    }
+
     .text_container_lg{
         margin-top: 1rem;
     }
