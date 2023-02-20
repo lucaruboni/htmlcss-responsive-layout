@@ -134,6 +134,9 @@
     margin: 2rem 0;
 }
 
+.benefits_bg{
+    background-color: var(--light-purple);
+}
 
 /* #endregion benefits */
 
@@ -160,6 +163,12 @@
         width: calc(100% / 12 *3);
     
     }
+
+    .col_md_3_bfts{
+        width: calc(100% / 12 *3);
+        margin: 2rem;
+    
+    }
     
 }
 
@@ -181,9 +190,10 @@
         width: calc(100% / 12 * 6);    
     }
 
-    .col_md_3{
+    .col_lg_3{
 
         width: calc(100% / 12 *3);
+        margin: 1rem;
     
     }
 
