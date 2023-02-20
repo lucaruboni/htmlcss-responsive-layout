@@ -56,6 +56,10 @@ p{
     margin-bottom: 0.4rem;
 }
 
+span{
+    display: inline-block;
+}
+
 [class="col"]{
     padding: 0 1rem;
 }
@@ -96,11 +100,26 @@ p{
     padding: 1rem;
 }
 
+.btn{
+    padding: 0.6rem;
+    margin: 1rem;
+    text-align: center;
+    display: inline-block;
+    border-radius: 25px;
+}
+
 .p_marg{
     margin: 2rem 1rem;
 }
 
+.col_12.purple{
+    background-color: var(--light-purple);
+    border-radius: 25px;
+}
 
+.text_container.white, p.white{
+    color: var(--light-white);
+}
 /* #endregion utilities */
 
 /* #region header */
@@ -127,7 +146,7 @@ p{
 }
 
 
-.btn{
+.btn.btn_heads{
     background-color: var(--light-white);
     color: var(--dark-black);
     font-weight: 700;
@@ -164,13 +183,11 @@ p{
     font-size: 1.5rem;
 }
 
+
+
 .btn.blue{
     color: var(--light-white);
     background-color: var(--head-blue);
-    padding: 0.6rem;
-    margin: 1rem;
-    text-align: center;
-    display: inline-block;
 }
 
 .feature_p{
@@ -201,9 +218,7 @@ p{
     border-radius: 25px;
 }
 
-.text_container.white{
-    color: var(--light-white);
-}
+
 
 #arrow{
     margin-top: 2rem;
@@ -224,6 +239,70 @@ p{
         background-color: var(--light-blue);
     }
 
+    .small_hed{
+        text-align: center;
+    }
+
+    .head_purple{
+        color: var(--light-purple);
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .partner_card{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .partner_img_container{
+        border-radius: 50%;
+        width: 100px;
+        aspect-ratio: 1 / 1;
+    }
+
+    .first_partner{
+        background-image: url(../img/testimonial1.jpg);
+        background-size: cover;
+        background-position: 50%;
+        align-self: center;
+        margin: 1rem 0;
+    }
+
+    .second_partner{
+        background-image: url(../img/testimonial2.jpg);
+        background-size: cover;
+        background-position: 50%;
+        align-self: center;
+        margin: 1rem 0;
+    }
+
+    .third_partner{
+        background-image: url(../img/download.jpg);
+        background-size: cover;
+        background-position: 50%;
+        align-self: center;
+        margin: 1rem 0;
+    }
+
+    .partner_h{
+        align-self: center;
+        font-weight: 600;
+        color: var(--light-white);
+        margin-top: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .row.up{
+        width: 30%;
+        margin: auto;
+    }
+
+    .r_down{
+        flex-direction: row;
+        width: 70%;
+        margin: auto;
+    }
 /* #endregion partner */
 
 /* #region benefits */
@@ -234,6 +313,11 @@ p{
 
 .benefits_bg{
     background-color: var(--light-purple);
+}
+
+.bg_benefits{
+    background-color: var(--light-white);
+    border-radius: 25px;
 }
 
 /* #endregion benefits */
@@ -278,7 +362,12 @@ p{
     
     }
     
- 
+    .partner_card{
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
 
 
 @media screen and (min-width: 1154px){
