@@ -22,6 +22,7 @@ body{
     --light-purple:#9792e4;
     --dark-black: #000;
     --light-grey: #5c7182;
+    --light-orange: #fdc15f;
 }
 
 .container{
@@ -86,14 +87,6 @@ span{
 
 }
 
-.col_md_6{
-}
-
-.col_md_4{
-}
-
-.col_lg_6{
-}
 
 .card{
     width: 100%;
@@ -124,12 +117,15 @@ span{
 
 /* #region header */
 
-.head_container{
-    background-color: var(--head-blue);
-    justify-content: space-between;
+.app_header{
     position: sticky;
     top: 0;
     left: 0;
+}
+
+.head_container{
+    background-color: var(--head-blue);
+    justify-content: space-between;
     box-shadow: 0 0 15px;
     width: 100%;
 }
@@ -153,6 +149,8 @@ span{
     border-radius: 35px;
 
 }
+
+
 /* #endregion header */
 
 /* #region main */
@@ -257,7 +255,7 @@ span{
 
     .partner_img_container{
         border-radius: 50%;
-        width: 100px;
+        width: 8rem;
         aspect-ratio: 1 / 1;
     }
 
@@ -325,7 +323,54 @@ span{
     color: var(--light-white);
     padding: 1rem 1.2rem;
 }
+
+.small_h{
+    font-size: 1.2rem;
+}
+
+.left_text{
+    text-align: left;
+}
+
+
 /* #endregion benefits */
+
+/* #region about us */
+
+.about_flex{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+
+.about_p{
+    font-size: 1rem;
+    text-align: left;
+}
+
+.purple_p{
+    color: var(--light-purple);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.left_head{
+    display: inline-block;
+    align-self: flex-start;
+    padding-left: 1rem;
+}
+
+#quote{
+    width: 100%;
+    text-align: right;
+    color: var(--light-purple);
+}
+
+h2.head_purple{
+    font-size: 2.5rem;
+}
+
+/* #endregion about us */
 
 /* #region call_to_action */
 
@@ -333,6 +378,36 @@ span{
     background-color: var(--light-purple);
 }
 
+.small_h_white{
+    color: var(--light-white);
+}
+
+.white_head{
+    color: var(--light-white);
+    margin: 0.8rem 0;
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.orange_head{
+    color: var(--light-orange);
+    font-size: 3.5rem;
+}
+
+.white_p{
+    color: var(--light-white);
+    display: block;
+}
+
+.btn_white_purple{
+    background-color: var(--light-white);
+    color: var(--light-purple);
+}
+
+.col_12.call{
+    flex-direction: column;
+    align-items: center;
+}
 
 /* #endregion call_to_action */
 
@@ -344,7 +419,15 @@ span{
 .footer_bg{
     background-color: var(--dark-black);
 }
+.footer_col{
+    color: var(--light-white);
+    display: flex;
+    flex-direction: column;
+}
 
+.footer_p{
+    text-align: center;
+}
 /* #endregion footer */
 
 
@@ -372,6 +455,16 @@ span{
         align-items: center;
         flex-wrap: wrap;
     }
+
+    .row_md{
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .about_w_md{
+        width: 100%;
+    }
+
 }
 
 
@@ -428,6 +521,14 @@ span{
     #phone{
         width: 40%;
         margin-bottom: -4rem;
+    }
+
+    p.white{
+        margin-right: 4rem;
+    }
+
+    .about_w_md{
+        width: 100%;
     }
 }
 
